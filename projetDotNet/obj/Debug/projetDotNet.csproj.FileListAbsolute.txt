@@ -1,0 +1,16 @@
+C:\Users\asus\source\repos\projetDotNet\projetDotNet\bin\Debug\projetDotNet.exe.config
+C:\Users\asus\source\repos\projetDotNet\projetDotNet\bin\Debug\projetDotNet.exe
+C:\Users\asus\source\repos\projetDotNet\projetDotNet\bin\Debug\projetDotNet.pdb
+C:\Users\asus\source\repos\projetDotNet\projetDotNet\obj\Debug\projetDotNet.csproj.AssemblyReference.cache
+C:\Users\asus\source\repos\projetDotNet\projetDotNet\obj\Debug\projetDotNet.Espace_Admin.resources
+C:\Users\asus\source\repos\projetDotNet\projetDotNet\obj\Debug\projetDotNet.Espace_Agent_Social.resources
+C:\Users\asus\source\repos\projetDotNet\projetDotNet\obj\Debug\projetDotNet.Espace_employe.resources
+C:\Users\asus\source\repos\projetDotNet\projetDotNet\obj\Debug\projetDotNet.Login.resources
+C:\Users\asus\source\repos\projetDotNet\projetDotNet\obj\Debug\projetDotNet.Properties.Resources.resources
+C:\Users\asus\source\repos\projetDotNet\projetDotNet\obj\Debug\projetDotNet.csproj.GenerateResource.cache
+C:\Users\asus\source\repos\projetDotNet\projetDotNet\obj\Debug\projetDotNet.csproj.CoreCompileInputs.cache
+C:\Users\asus\source\repos\projetDotNet\projetDotNet\obj\Debug\projetDotNet.exe
+C:\Users\asus\source\repos\projetDotNet\projetDotNet\obj\Debug\projetDotNet.pdb
+C:\Users\asus\source\repos\projetDotNet\projetDotNet\obj\Debug\projetDotNet.LoginAdmin.resources
+C:\Users\asus\source\repos\projetDotNet\projetDotNet\obj\Debug\projetDotNet.LoginAgent.resources
+C:\Users\asus\source\repos\projetDotNet\projetDotNet\obj\Debug\projetDotNet.LoginEmploye.resources
