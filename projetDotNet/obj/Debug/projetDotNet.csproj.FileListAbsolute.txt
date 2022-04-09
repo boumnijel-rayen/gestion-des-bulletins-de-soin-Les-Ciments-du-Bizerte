@@ -14,3 +14,4 @@ C:\Users\asus\source\repos\projetDotNet\projetDotNet\obj\Debug\projetDotNet.pdb
 C:\Users\asus\source\repos\projetDotNet\projetDotNet\obj\Debug\projetDotNet.LoginAdmin.resources
 C:\Users\asus\source\repos\projetDotNet\projetDotNet\obj\Debug\projetDotNet.LoginAgent.resources
 C:\Users\asus\source\repos\projetDotNet\projetDotNet\obj\Debug\projetDotNet.LoginEmploye.resources
+C:\Users\asus\source\repos\projetDotNet\projetDotNet\obj\Debug\projetDotNet.Ajoute_bulletin.resources

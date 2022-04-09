@@ -17,13 +17,11 @@ namespace projetDotNet
         public Espace_Agent_Social(int id)
         {
             InitializeComponent();
-            Login.ActiveForm.Hide();
+            if(Login.ActiveForm != null)
+            {
+                Login.ActiveForm.Hide();
+            }
             this.id = id;
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show(id.ToString());
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -32,6 +30,13 @@ namespace projetDotNet
             Login l = new Login();
             l.ShowDialog();
             
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Ajoute_bulletin ajoute_Bulletin = new Ajoute_bulletin(id);
+            ajoute_Bulletin.ShowDialog();
         }
     }
 }

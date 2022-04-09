@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Ajoute bulletin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ajoute bulletin.Designer.cs">
+      <DependentUpon>Ajoute bulletin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Espace Admin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,6 +96,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Ajoute bulletin.resx">
+      <DependentUpon>Ajoute bulletin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Espace Admin.resx">
       <DependentUpon>Espace Admin.cs</DependentUpon>
     </EmbeddedResource>
