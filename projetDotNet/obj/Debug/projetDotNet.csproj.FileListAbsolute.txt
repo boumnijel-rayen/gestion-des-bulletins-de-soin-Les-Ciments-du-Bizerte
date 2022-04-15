@@ -15,3 +15,6 @@ C:\Users\asus\source\repos\projetDotNet\projetDotNet\obj\Debug\projetDotNet.Logi
 C:\Users\asus\source\repos\projetDotNet\projetDotNet\obj\Debug\projetDotNet.LoginAgent.resources
 C:\Users\asus\source\repos\projetDotNet\projetDotNet\obj\Debug\projetDotNet.LoginEmploye.resources
 C:\Users\asus\source\repos\projetDotNet\projetDotNet\obj\Debug\projetDotNet.Ajoute_bulletin.resources
+C:\Users\asus\source\repos\projetDotNet\projetDotNet\obj\Debug\projetDotNet.Modifier_bulletin.resources
+C:\Users\asus\source\repos\projetDotNet\projetDotNet\obj\Debug\projetDotNet.Supprimer_bulletin.resources
+C:\Users\asus\source\repos\projetDotNet\projetDotNet\obj\Debug\projetDotNet.Rechercher_bulletin.resources

@@ -93,6 +93,7 @@ namespace projetDotNet
             this.button3.TabIndex = 4;
             this.button3.Text = "Modifier un bulletin de soin";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -108,6 +109,7 @@ namespace projetDotNet
             this.button4.TabIndex = 5;
             this.button4.Text = "Supprimer un bulletin de soin";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
@@ -123,6 +125,7 @@ namespace projetDotNet
             this.button5.TabIndex = 6;
             this.button5.Text = "Rechercher un bulletin de soin";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button6
             // 
@@ -138,6 +141,7 @@ namespace projetDotNet
             this.button6.TabIndex = 7;
             this.button6.Text = "Rédiger un rapport";
             this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // Espace_Agent_Social
             // 

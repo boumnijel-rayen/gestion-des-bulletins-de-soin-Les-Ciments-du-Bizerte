@@ -57,7 +57,7 @@ namespace projetDotNet
         {
             String date;
             String matE;
-            Double frais;
+            decimal frais;
 
             if (numb.Text == "")
             {
@@ -88,9 +88,11 @@ namespace projetDotNet
                         {
                             date = dateD.Value.ToString("dd-MM-yyyy");
                             matE = comboBoxMatE.SelectedItem.ToString();
-                            frais = double.Parse(totale.Text) * 0.3 ;
+                            frais = decimal.Parse(totale.Text) * 0.3M;
                             
-                            cmd = new SqlCommand("insert into bulletin (num_B,date_Dep,acte,totale,frais,mat_E,id_AS) values ("+numb.Text+",'"+date+"','"+acte.Text+"',"+totale.Text+","+frais+","+matE+","+id+")", con);
+                            cmd = new SqlCommand("insert into bulletin (num_B,date_Dep,acte,totale,frais,mat_E,id_AS) values ("+numb.Text+",'"+date+"','"+acte.Text+"',@totale,@frais,"+matE+","+id+")", con);
+                            cmd.Parameters.AddWithValue("@totale", decimal.Parse(totale.Text));
+                            cmd.Parameters.AddWithValue("@frais",frais);
                             cmd.ExecuteNonQuery();
                             MessageBox.Show("bulletin ajouté !");
                            

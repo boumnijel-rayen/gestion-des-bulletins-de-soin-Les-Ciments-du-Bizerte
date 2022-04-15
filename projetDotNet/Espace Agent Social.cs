@@ -38,5 +38,31 @@ namespace projetDotNet
             Ajoute_bulletin ajoute_Bulletin = new Ajoute_bulletin(id);
             ajoute_Bulletin.ShowDialog();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Modifier_bulletin modifier_Bulletin = new Modifier_bulletin(id);
+            modifier_Bulletin.ShowDialog();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(id.ToString());
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Supprimer_bulletin supprimer_Bulletin = new Supprimer_bulletin(id);
+            supprimer_Bulletin.ShowDialog();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Rechercher_bulletin rechercher_Bulletin = new Rechercher_bulletin(id);
+            rechercher_Bulletin.ShowDialog();
+        }
     }
 }

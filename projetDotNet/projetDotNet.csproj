@@ -94,8 +94,26 @@
     <Compile Include="LoginEmploye.Designer.cs">
       <DependentUpon>LoginEmploye.cs</DependentUpon>
     </Compile>
+    <Compile Include="Modifier bulletin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modifier bulletin.Designer.cs">
+      <DependentUpon>Modifier bulletin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rechercher bulletin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rechercher bulletin.Designer.cs">
+      <DependentUpon>Rechercher bulletin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Supprimer bulletin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supprimer bulletin.Designer.cs">
+      <DependentUpon>Supprimer bulletin.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Ajoute bulletin.resx">
       <DependentUpon>Ajoute bulletin.cs</DependentUpon>
     </EmbeddedResource>
@@ -120,6 +138,9 @@
     <EmbeddedResource Include="LoginEmploye.resx">
       <DependentUpon>LoginEmploye.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Modifier bulletin.resx">
+      <DependentUpon>Modifier bulletin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -130,6 +151,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Rechercher bulletin.resx">
+      <DependentUpon>Rechercher bulletin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supprimer bulletin.resx">
+      <DependentUpon>Supprimer bulletin.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
