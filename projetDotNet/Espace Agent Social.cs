@@ -48,7 +48,9 @@ namespace projetDotNet
 
         private void button6_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(id.ToString());
+            this.Hide();
+            redigerRapport redigerRapport = new redigerRapport(id);
+            redigerRapport.ShowDialog();
         }
 
         private void button4_Click(object sender, EventArgs e)

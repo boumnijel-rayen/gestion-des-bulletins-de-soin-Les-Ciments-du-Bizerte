@@ -18,3 +18,4 @@ C:\Users\asus\source\repos\projetDotNet\projetDotNet\obj\Debug\projetDotNet.Ajou
 C:\Users\asus\source\repos\projetDotNet\projetDotNet\obj\Debug\projetDotNet.Modifier_bulletin.resources
 C:\Users\asus\source\repos\projetDotNet\projetDotNet\obj\Debug\projetDotNet.Supprimer_bulletin.resources
 C:\Users\asus\source\repos\projetDotNet\projetDotNet\obj\Debug\projetDotNet.Rechercher_bulletin.resources
+C:\Users\asus\source\repos\projetDotNet\projetDotNet\obj\Debug\projetDotNet.redigerRapport.resources

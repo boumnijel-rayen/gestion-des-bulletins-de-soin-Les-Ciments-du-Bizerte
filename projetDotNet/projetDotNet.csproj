@@ -108,6 +108,12 @@
     <Compile Include="Rechercher bulletin.Designer.cs">
       <DependentUpon>Rechercher bulletin.cs</DependentUpon>
     </Compile>
+    <Compile Include="redigerRapport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="redigerRapport.Designer.cs">
+      <DependentUpon>redigerRapport.cs</DependentUpon>
+    </Compile>
     <Compile Include="Supprimer bulletin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -153,6 +159,9 @@
     </Compile>
     <EmbeddedResource Include="Rechercher bulletin.resx">
       <DependentUpon>Rechercher bulletin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="redigerRapport.resx">
+      <DependentUpon>redigerRapport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Supprimer bulletin.resx">
       <DependentUpon>Supprimer bulletin.cs</DependentUpon>
