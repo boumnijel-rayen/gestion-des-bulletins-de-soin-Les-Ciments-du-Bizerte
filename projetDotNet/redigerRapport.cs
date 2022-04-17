@@ -48,12 +48,89 @@ namespace projetDotNet
 
         private void button2_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(id.ToString());
+            if (dataGridViewBulletin.CurrentRow.Index >= 0)
+            {
+                DataGridViewRow l = dataGridViewBulletin.Rows[dataGridViewBulletin.CurrentRow.Index];
+                String selectedNum = l.Cells["num_B"].Value.ToString();
+                DataTable table1 = new DataTable();
+                DataTable table2 = new DataTable();
+
+                deconnecter();
+                con.Open();
+                cmd = new SqlCommand("select frais,mat_E from bulletin where num_B=" + selectedNum, con);
+                Reader = cmd.ExecuteReader();
+                table1.Load(Reader);
+                String frais = table1.Rows[0]["frais"].ToString();
+                String numE = table1.Rows[0]["mat_E"].ToString();
+                con.Close();
+
+                deconnecter();
+                con.Open();
+                cmd = new SqlCommand("select plafond_R from employe where mat_E="+numE, con);
+                Reader = cmd.ExecuteReader();
+                table2.Load(Reader);
+                String plafond = table2.Rows[0]["plafond_R"].ToString();
+                con.Close();
+
+                double plafondD = double.Parse(plafond);
+                double fraisD = double.Parse(frais);
+
+                if (rapport.Text != "")
+                 {
+                    String rep;
+                    if(plafondD == 0)
+                    {
+                        rep = "refuser";
+
+                    }
+                    else
+                    {
+                        double newP;
+                        if (plafondD > fraisD)
+                        {
+                            newP = plafondD - fraisD;
+                        }
+                        else
+                        {
+                            newP = 0;
+                        }
+                        rep = "accepter";
+                        deconnecter();
+                        con.Open();
+                        cmd = new SqlCommand("update employe set plafond_R=@plafond where mat_E="+numE, con);
+                        cmd.Parameters.AddWithValue("@plafond",newP);
+                        cmd.ExecuteNonQuery();
+                        con.Close();
+                    }
+
+                     deconnecter();
+                     con.Open();
+                     cmd = new SqlCommand("update bulletin set des='"+rapport.Text+"',reponse='"+rep+"' where num_B=" + selectedNum, con);
+                     cmd.ExecuteNonQuery();
+                     MessageBox.Show("rapport rédigé avec succes");
+                     con.Close();
+                 }
+                 else
+                 {
+                     MessageBox.Show("rédigez le rapport !");
+                 }
+            }
+            else
+            {
+                MessageBox.Show("selectionnez un bulletin !");
+            }
         }
 
         private void redigerRapport_Load(object sender, EventArgs e)
         {
             chargerBulletin();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Espace_Agent_Social espace_Agent_Social = new Espace_Agent_Social(id);
+            espace_Agent_Social.Show();
         }
     }
 }

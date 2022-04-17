@@ -60,12 +60,12 @@ namespace projetDotNet
                 cmd.Parameters.AddWithValue("@frais", frais);
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("bulletin mis à jour avec success !");
+                con.Close();
             }
             else
             {
                 MessageBox.Show("selectionnez un bulletin !");
             }
-            con.Close();
         }
 
         private void button1_Click(object sender, EventArgs e)

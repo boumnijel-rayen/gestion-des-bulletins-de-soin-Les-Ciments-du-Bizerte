@@ -33,7 +33,7 @@ namespace projetDotNet
             this.button2 = new System.Windows.Forms.Button();
             this.dataGridViewBulletin = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.rapport = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewBulletin)).BeginInit();
             this.SuspendLayout();
@@ -48,6 +48,7 @@ namespace projetDotNet
             this.button1.TabIndex = 2;
             this.button1.Text = "Retour";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -67,9 +68,9 @@ namespace projetDotNet
             // dataGridViewBulletin
             // 
             this.dataGridViewBulletin.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewBulletin.Location = new System.Drawing.Point(135, 66);
+            this.dataGridViewBulletin.Location = new System.Drawing.Point(49, 69);
             this.dataGridViewBulletin.Name = "dataGridViewBulletin";
-            this.dataGridViewBulletin.Size = new System.Drawing.Size(521, 150);
+            this.dataGridViewBulletin.Size = new System.Drawing.Size(685, 150);
             this.dataGridViewBulletin.TabIndex = 13;
             // 
             // label1
@@ -82,13 +83,13 @@ namespace projetDotNet
             this.label1.TabIndex = 14;
             this.label1.Text = "choisissez un bulletin :";
             // 
-            // textBox1
+            // rapport
             // 
-            this.textBox1.Location = new System.Drawing.Point(196, 263);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(385, 108);
-            this.textBox1.TabIndex = 15;
+            this.rapport.Location = new System.Drawing.Point(196, 263);
+            this.rapport.Multiline = true;
+            this.rapport.Name = "rapport";
+            this.rapport.Size = new System.Drawing.Size(385, 108);
+            this.rapport.TabIndex = 15;
             // 
             // label2
             // 
@@ -106,7 +107,7 @@ namespace projetDotNet
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.rapport);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridViewBulletin);
             this.Controls.Add(this.button2);
@@ -126,7 +127,7 @@ namespace projetDotNet
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.DataGridView dataGridViewBulletin;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox rapport;
         private System.Windows.Forms.Label label2;
     }
 }
